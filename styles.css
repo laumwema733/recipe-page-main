@@ -108,6 +108,9 @@ li {
 .section-four {
   padding-bottom: 0;
 }
+.section-four p{
+  margin-bottom: 2.4rem;
+}
 .section__nutrition div:last-child {
   border-bottom: 0;
 }

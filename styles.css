@@ -1,0 +1,107 @@
+/* color */
+
+:root {
+  --background-color: #f3e5d7;
+  --secondary-color: #854632;
+  --white-color: #ffffff;
+}
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--background-color);
+  padding-block: 12.8rem;
+  font-size: 1.6rem;
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.6;
+}
+.container {
+  max-width: 74rem;
+  background-color: var(--white-color);
+  color: #5F564D;
+  padding: 4rem;
+  margin: 0 auto;
+}
+.hero {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.hero img {
+  width: 100%;
+}
+.heading-primary {
+  margin-bottom: 2.4rem;
+  font-size: 4rem;
+  color: #312E2C;
+}
+.section-one-paragraph {
+  margin-bottom: 3.2rem;
+}
+.inner-article {
+  padding: 2.4rem;
+  background-color: #fff7fb;
+}
+.inner-article h4 {
+  color: #7b284f;
+}
+.inner-article ul {
+  margin-left: 1.4rem;
+}
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2.4rem;
+  color: var(--secondary-color);
+}
+section {
+  border-bottom: 1px solid black;
+  padding-block: 3.2rem;
+}
+.section__nutrition {
+  border-bottom: 0;
+}
+ul,
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-left: .8rem;
+}
+li::marker {
+  color: var(--secondary-color);
+}
+
+li{
+/* dds space after the marker */
+padding-left: 2rem;
+/* this add space before the marker */
+margin-left: .8rem;
+}
+
+.section__nutrition div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  font-size: 1.6rem;
+  gap: 1.6rem;
+  padding-block: 1.2rem;
+  border-bottom: 1px solid;
+}
+h1,
+h2,
+h4 {
+  font-family: 'Young Serif', sans-serif;
+}
+.number {
+  color: var(--secondary-color);
+  font-weight: bolder;
+}

@@ -35,7 +35,7 @@ body {
 }
 .hero {
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .hero img {
   width: 100%;
@@ -115,7 +115,7 @@ ol > li::marker{
   padding-bottom: 0;
 }
 .section-four p{
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.4rem;
 }
 .section__nutrition div:last-child {
   border-bottom: 0;

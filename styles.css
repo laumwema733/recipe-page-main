@@ -28,9 +28,11 @@ body {
 .container {
   max-width: 74rem;
   background-color: var(--white-color);
-  color: #5F564D;
+  color: #5f564d;
   padding: 4rem;
   margin: 0 auto;
+  border-radius: 2.4rem;
+  margin-bottom: 3.2rem;
 }
 .hero {
   width: 100%;
@@ -38,11 +40,17 @@ body {
 }
 .hero img {
   width: 100%;
+  border-radius: 1.2rem;
 }
-.heading-primary {
+
+h1 {
   margin-bottom: 2.4rem;
   font-size: 4rem;
-  color: #312E2C;
+  color: #312e2c;
+  font-weight: normal;
+}
+.section-one {
+  padding-top: 0;
 }
 .section-one-paragraph {
   margin-bottom: 3.2rem;
@@ -53,6 +61,7 @@ body {
 }
 .inner-article h4 {
   color: #7b284f;
+  margin-bottom: 1.6rem;
 }
 .inner-article ul {
   margin-left: 1.4rem;
@@ -63,8 +72,8 @@ h2 {
   color: var(--secondary-color);
 }
 section {
-  border-bottom: 1px solid black;
-  padding-block: 3.2rem;
+  border-bottom: 1px solid #e3ddd7;
+  padding-block: 2.4rem;
 }
 .section__nutrition {
   border-bottom: 0;
@@ -74,27 +83,33 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  margin-left: .8rem;
+  margin-left: 0.8rem;
 }
 li::marker {
   color: var(--secondary-color);
 }
 
-li{
-/* dds space after the marker */
-padding-left: 2rem;
-/* this add space before the marker */
-margin-left: .8rem;
+li {
+  /* dds space after the marker */
+  padding-left: 2rem;
+  /* this add space before the marker */
+  margin-left: 0.8rem;
 }
 
-.section__nutrition div {
+.section-four div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   font-size: 1.6rem;
   gap: 1.6rem;
   padding-block: 1.2rem;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #e3ddd7;
+}
+.section-four {
+  padding-bottom: 0;
+}
+.section__nutrition div:last-child {
+  border-bottom: 0;
 }
 h1,
 h2,
@@ -104,4 +119,44 @@ h4 {
 .number {
   color: var(--secondary-color);
   font-weight: bolder;
+}
+.ingredient {
+  margin-left: 3.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 61.6rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container {
+    max-width: 61.6rem;
+
+  }
+  body{
+    padding-block: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    padding: 0;
+    background: none;
+  }
+  .hero img{
+    border-radius: 0;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: 3.8rem;
+  }
+
+  h1{
+    font-size: 3.2rem;
+  }
+  main{
+    padding-inline: 3.2rem;
+  }
 }
